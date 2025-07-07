@@ -8,8 +8,8 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://p8552015.github.io/tung',
   siteRepo: 'https://github.com/p8552015/tung',
-  siteLogo: `${process.env.BASE_PATH || ''}/static/images/logo.png`,
-  socialBanner: `${process.env.BASE_PATH || ''}/static/images/twitter-card.png`,
+  siteLogo: `${process.env.BASE_PATH || ''}/static/images/ai/ai-expert-logo.webp`,
+  socialBanner: `${process.env.BASE_PATH || ''}/static/images/ai/ai-expert-social-banner.webp`,
   mastodon: 'https://mastodon.social/@mastodonuser',
   email: 'ai.expert@example.com',
   github: 'https://github.com/p8552015',

@@ -28,16 +28,14 @@ jobs:
           node-version: "20"
           cache: "yarn"
 
-      - name: Setup Pages
-        uses: actions/configure-pages@v5
-        with:
-          static_site_generator: next
-
       - name: Install dependencies
         run: yarn install
 
       - name: Build with Next.js
-        run: EXPORT=1 UNOPTIMIZED=1 BASE_PATH=/tung yarn build
+        run: yarn build:gh-pages
+
+      - name: Add .nojekyll file
+        run: touch ./out/.nojekyll
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
